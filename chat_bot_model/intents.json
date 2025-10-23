@@ -1,0 +1,165 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
+    },
+    {
+      "tag": "symptoms",
+      "patterns": [
+        "What are the typical symptoms of high-intensity heart disease?"
+      ],
+      "responses": [
+        "Common symptoms include severe chest pain, shortness of breath, fatigue, and swelling in the legs or abdomen. However, symptoms can vary among individuals."
+      ]
+    },
+    {
+      "tag": "chest_pain_management",
+      "patterns": [
+        "How can I manage the intense chest pain I'm experiencing?"
+      ],
+      "responses": [
+        "It's important to seek immediate medical attention if you're experiencing severe chest pain. Your healthcare provider can provide appropriate treatment options to manage your symptoms and improve your condition."
+      ]
+    },
+    {
+      "tag": "lifestyle_changes",
+      "patterns": [
+        "What lifestyle changes can I make to improve my heart health?"
+      ],
+      "responses": [
+        "Adopting a heart-healthy diet, engaging in regular exercise, quitting smoking (if applicable), managing stress, and monitoring blood pressure and cholesterol levels are important steps in managing heart disease."
+      ]
+    },
+    {
+      "tag": "foods_to_avoid",
+      "patterns": [
+        "Are there any specific foods I should avoid?"
+      ],
+      "responses": [
+        "Limiting intake of saturated fats, sodium, and refined sugars can help improve heart health. Focus on consuming more fruits, vegetables, whole grains, and lean proteins."
+      ]
+    },
+    {
+      "tag": "medications",
+      "patterns": [
+        "What medications are commonly prescribed for high-intensity heart disease?"
+      ],
+      "responses": [
+        "Medications such as beta-blockers, ACE inhibitors, statins, and antiplatelet agents are often prescribed to manage symptoms and reduce the risk of complications."
+      ]
+    },
+    {
+      "tag": "alternative_treatments",
+      "patterns": [
+        "Are there any alternative or complementary treatments I can consider?"
+      ],
+      "responses": [
+        "Some individuals find benefits from practices like acupuncture, meditation, or certain herbal supplements, but it's important to consult with your healthcare provider before trying any alternative treatments."
+      ]
+    },
+    {
+      "tag": "monitoring_vital_signs",
+      "patterns": [
+        "How often should I monitor my blood pressure and other vital signs?"
+      ],
+      "responses": [
+        "Your healthcare provider can provide guidance on how frequently you should monitor your blood pressure, but typically it's recommended to check it regularly at home and during clinic visits."
+      ]
+    },
+    {
+      "tag": "worsening_condition",
+      "patterns": [
+        "What signs or symptoms should I watch out for that indicate worsening of my condition?"
+      ],
+      "responses": [
+        "Symptoms such as increasing chest pain, worsening shortness of breath, sudden weight gain, or swelling in the legs can indicate a worsening of your condition. It's important to seek medical attention if you experience any of these symptoms."
+      ]
+    },
+    {
+      "tag": "emotional_support",
+      "patterns": [
+        "I'm feeling overwhelmed and anxious about my heart condition. What can I do?"
+      ],
+      "responses": [
+        "Managing a heart condition can be challenging, both physically and emotionally. Consider seeking support from loved ones, joining a support group, or talking to a mental health professional for additional support and coping strategies."
+      ]
+    },
+    {
+      "tag": " good sleep cycle",
+      "patterns": [
+        "What is a good sleep cycle?"
+      ],
+      "responses": [
+        "A good sleep cycle typically includes 7-9 hours of quality sleep per night."
+      ]
+    },
+    {
+      "tag": " improve sleep cycle",
+      "patterns": [
+        "How can I improve my sleep cycle?"
+      ],
+      "responses": [
+        "To improve your sleep cycle, try to maintain a consistent bedtime and wake-up time, create a relaxing bedtime routine, and ensure your sleep environment is comfortable."
+      ]
+    },
+    {
+      "tag": " healthy sleep cycle",
+      "patterns": [
+        "Do you have any tips for a healthy sleep cycle?"
+      ],
+      "responses": [
+        "Tips for a healthy sleep cycle include avoiding caffeine and electronics before bed, exercising regularly, and managing stress levels."
+      ]
+    },
+    {
+      "tag": "  recommended sleep cycle",
+      "patterns": [
+        "What are the recommended sleep hours?"
+      ],
+      "responses": [
+        "The recommended sleep hours for adults are 7-9 hours per night."
+      ]
+    }
+  ]
+}
