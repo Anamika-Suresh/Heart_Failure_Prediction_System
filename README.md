@@ -21,27 +21,38 @@
  platform.
 
   ***TECHNOLOGYSTACK***
+
+  
  **1. Frontend**
+ 
  ● Technologies: HTML, CSS, JavaScript
  ● Purpose: User interface development for interactive and responsive design.
  ● HTML:Structure of the web pages.
  ● CSS:Styling and layout of the web interface.
  ● JavaScript: Interactive elements and dynamic content.
+ 
  **2. Backend**
+ 
  ● Technology: Flask (Python)
  ● Role: Server-side logic, application integration, and API management.
  ● Lightweight and flexible framework for web applications.
  ● Integrates seamlessly with Python's powerful data science libraries.
+ 
  **3. Machine Learning Model**
+ 
  ● Algorithm: K-Nearest Neighbors (KNN) Classifier
  ● Framework: Scikit-learn
  ● Purpose: Heart failure prediction based on health parameters.
+ 
  **4. Database**
+ 
  ● Technology: PostgreSQL
  ● Function: Secure storage and management of user data and application
  data.Robust, open-source object-relational database system.
  ● Ensures secure and reliable data storage and management.
+ 
  **5. Chatbot**
+ 
  ● Technology: PyTorch, Neural Networks
  ● Function: Interactive assistance for users, providing information and guidance.
  ● Utilizes advanced neural network models to understand and respond to user
