@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RiskAssess | Assessment</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        padding-top: 5rem;
+        color: #333;
+      }
+
+      nav {
+        font-family: sans-serif;
+      }
+
+      .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .navbar {
+        background-color: #007bff;
+      }
+
+      .pricing-header {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+
+      .themed-container {
+        background-color: #f8f9fa;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 5px;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        margin-top: 1rem;
+      }
+
+      .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 2rem;
+        color: #888;
+      }
+
+      footer a {
+        color: #007bff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="assess">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">RiskAssess</a>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="pricing-header">
+          <h1 class="display-4 text-center">Risk Assessment</h1>
+          <p class="lead text-center">Please find below the Risk Assessment</p>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="themed-container">
+                  <h1 class="text-center">{{ prediction_text }}</h1>
+                  <h2 class="text-center">Intensity: {{ intensity_percentage }}%</h2>
+                  <h2 class="text-center">Suggested Sleep Cycle: {{ sleep_cycle }}</h2>
+                  <p class="text-center">
+                    Click <a href="/chatbot">here</a> to chat with our Medbot.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+      <footer>
+        <div class="container">
+          &copy; 2024 RiskAssess.com | All Rights Reserved |
+          <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
+
+      <div class="container text-center">
+        <button class="btn btn-primary btn-lg" id="download">Download</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script>
+      window.onload = function () {
+        document.getElementById("download").addEventListener("click", () => {
+          const invoice = document.getElementById("assess");
+          var opt = {
+            margin: 1,
+            filename: "Heart_Assessment.pdf",
+            image: { type: "jpeg", quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: "in", format: "letter", orientation: "landscape" },
+          };
+          html2pdf().from(invoice).set(opt).save();
+        });
+      };
+    </script>
+  </body>
+</html>
